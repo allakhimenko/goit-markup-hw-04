@@ -89,41 +89,31 @@ margin-right: 50px;
 
 .contacts a{
     display: inline-flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    fill: var(--primary-text-color);
 }
 
 .contacts a:hover,
 .contacts a:focus{
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .contacts .item:last-child{
     margin-left: 30px;
 }
 
-.contacts a::before{
-    height: 16px;
-    width: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    content: ' ';
+.icon-envelope svg{
     margin-right: 10px;
 }
 
-.icon-envelope::before{
-    background-image: url(../images/envelope.svg);
-}
-
-.icon-envelope:hover:before{
-    background-image: url(../images/envelope\ \(hover\).svg);
-}
-
-.icon-phone::before{
-    background-image: url(../images/smartphone.svg);
+.icon-phone svg{
+    margin-right: 10px;
 }
 
 /*Главный баннер*/
@@ -146,6 +136,10 @@ margin-right: 50px;
 
 .hero{
     background-color: var(--primary-background-color);
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 280px;}
 
@@ -187,33 +181,16 @@ margin-right: 50px;
     justify-content: space-between;
 }
 
-.feature-items .item::before{
-    display: block;
+.features-frames{
+    display:flex;
+    align-items:center;
+    justify-content:center;
     margin-bottom: 30px;
-    content: '';
     width: 270px;
     height: 120px;
     background-color: var(--secoundary-background-color);
     background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 4px;
-}
-
-.feature-items .item:nth-child(1)::before{
-    background-image: url(../images/antenna\ 1.svg);
-}
-
-.feature-items .item:nth-child(2)::before{
-    background-image: url(../images/clock\ 1.svg);
-}
-
-.feature-items .item:nth-child(3)::before{
-    background-image: url(../images/diagram\ 1.svg);
-}
-
-.feature-items .item:nth-child(4)::before{
-    background-image: url(../images/astronaut\ 1.svg);
 }
 
 .features h3{
@@ -338,7 +315,7 @@ margin-right: 50px;
 .card a:hover{background-color: var(--accent-color);}
 
 .card a:not(:last-child){ margin-right: 10px;}
-
+/*
 .card .Instagramm{background-image: url(../images/instagram\ 2.svg);}
 
 .card .Twitter{background-image: url(../images/twitter\ 1.svg);}
@@ -346,7 +323,7 @@ margin-right: 50px;
 .card .Facebook{background-image: url(../images/facebook\ 1.svg);}
 
 .card .Linkedin{background-image: url(../images/linkedin\ 1.svg);}
-
+*/
 .our-clients{
     padding-top: 94px;
 }
