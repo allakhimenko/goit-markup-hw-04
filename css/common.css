@@ -307,16 +307,21 @@ margin-right: 50px;
     height: 44px;
     background-color: var(--primary-white-color);
     border-radius: 50%;
+    fill: #afb1b8;
+}
+
+.card a:hover,
+.card a:focus{
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color)
 }
 
 .card svg{
     display: block;
-    align-items: center;
+    margin: auto;
     width: 20px;
     height: 20px;
 }
-
-.card a:hover{background-color: var(--accent-color);}
 
 .card a:not(:last-child){ margin-right: 10px;}
 /*
