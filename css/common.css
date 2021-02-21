@@ -5,6 +5,7 @@
  --accent-color: #2196F3;
  --primary-background-color: #2F303A;
  --secoundary-background-color: #F5F4FA;
+ --icons-color: #AFB1B8;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     max-width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px red solid;
+
   }
 
 /*Шапка сайта*/
@@ -139,9 +140,10 @@ margin-right: 50px;
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 1600px 600px;
     padding-top: 200px;
-    padding-bottom: 280px;}
+    padding-bottom: 200px;
+}
 
 .button{
     margin-left: auto;
@@ -303,7 +305,6 @@ margin-right: 50px;
 
 .social-links-list{
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 0;
 }
@@ -316,13 +317,19 @@ margin-right: 50px;
     height: 44px;
     background-color: var(--primary-white-color);
     border-radius: 50%;
-    fill: #afb1b8;
+    fill: var(--icons-color);
 }
 
 .card a:hover,
 .card a:focus{
     background-color: var(--accent-color);
     fill: var(--primary-white-color)
+}
+
+.social-links-list a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card svg{
@@ -336,7 +343,7 @@ margin-right: 50px;
     padding-top: 94px;
 }
 
-.our-clients .list-item li{
+.our-clients .list-item a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,7 +351,8 @@ margin-right: 50px;
     height: 90px;
     padding-bottom: 0;
 
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icons-color);
+    color: var(--icons-color);
     box-sizing: border-box;
     border-radius: 4px;
     background-position: center;
@@ -352,10 +360,16 @@ margin-right: 50px;
     background-repeat: no-repeat;
 }
 
+.our-clients .list-item a:focus,
+.our-clients .list-item a:hover{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
 .our-clients .list-item li:not(:last-child){ margin-right: 30px;}
 
 .clients-icons{
-    fill: #AFB1B8;
+    fill:currentColor;
 }
 
 /*Футер*/
@@ -395,11 +409,12 @@ margin-right: 50px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-address > a{
+.address > a{
     display: inline-block;
     margin-top: 9px;
 }
 
+/*Правая часть футера с ссылками на соц. сети*/
 .right-side-footer{
     margin-left: 70px;
     margin-top: 12px;
@@ -416,10 +431,16 @@ address > a{
     color: var(--primary-white-color);
 }
 
-.soc-links{padding-left: 0;}
+.soc-links{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
 
-.soc-links li{
-    display: inline-block;
+.footer-soc-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
 
@@ -430,23 +451,19 @@ address > a{
     border-radius: 50%;
 }
 
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+    background: var(--accent-color);
+}
+
+.footer-soc-links-icons{
+    fill: var(--primary-white-color);
+    height: 20px;
+    width: 20px;
+}
+
 .soc-links li:not(:last-child){ margin-right: 10px;}
 
-.soc-links li:nth-child(1){
-    background-image: url(../images/instagram\ 2.svg);
-}
-
-.soc-links li:nth-child(2){
-    background-image: url(../images/twitter\ 2.svg);
-}
-
-.soc-links li:nth-child(3){
-    background-image: url(../images/facebook\ 2.svg);
-}
-
-.soc-links li:nth-child(4){
-    background-image: url(../images/linkedin\ 2.svg);
-}
 /*Портфолио*/
 .portfolio{
     padding-top: 94px;
@@ -505,6 +522,11 @@ address > a{
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     
+}
+
+.projects .project-item:hover,
+.projects .project-item:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects .project-item:nth-of-type(3n){
