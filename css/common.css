@@ -305,11 +305,15 @@ margin-right: 50px;
     display: inline-block;
     width: 44px;
     height: 44px;
-    background-position: center;
-    background-size: 20px;
-    background-repeat: no-repeat;
     background-color: var(--primary-white-color);
     border-radius: 50%;
+}
+
+.card svg{
+    display: block;
+    align-items: center;
+    width: 20px;
+    height: 20px;
 }
 
 .card a:hover{background-color: var(--accent-color);}
