@@ -301,6 +301,15 @@ margin-right: 50px;
     margin-bottom: 30px;
 }
 
+.social-links-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links-list li:not(:last-child){ margin-right: 10px;}
+
 .card a{
     display: inline-block;
     width: 44px;
@@ -317,28 +326,20 @@ margin-right: 50px;
 }
 
 .card svg{
-    display: block;
-    margin: auto;
     width: 20px;
     height: 20px;
 }
 
 .card a:not(:last-child){ margin-right: 10px;}
-/*
-.card .Instagramm{background-image: url(../images/instagram\ 2.svg);}
 
-.card .Twitter{background-image: url(../images/twitter\ 1.svg);}
-
-.card .Facebook{background-image: url(../images/facebook\ 1.svg);}
-
-.card .Linkedin{background-image: url(../images/linkedin\ 1.svg);}
-*/
 .our-clients{
     padding-top: 94px;
 }
 
 .our-clients .list-item li{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 90px;
     padding-bottom: 0;
@@ -353,34 +354,8 @@ margin-right: 50px;
 
 .our-clients .list-item li:not(:last-child){ margin-right: 30px;}
 
-.our-clients .list-item li:nth-child(1){
-    background-image: url(../images/logo\ 1.svg);
-    background-size: 44px 49px;
-}
-
-.our-clients .list-item li:nth-child(2){
-    background-image: url(../images/logo\ 2.svg);
-    background-size: 40px 52px;
-}
-
-.our-clients .list-item li:nth-child(3){
-    background-image: url(../images/logo\ 3.svg);
-    background-size: 41px 43px;
-}
-
-.our-clients .list-item li:nth-child(4){
-    background-image: url(../images/logo\ 4.svg);
-    background-size: 80px 42px;
-}
-
-.our-clients .list-item li:nth-child(5){
-    background-image: url(../images/logo\ 5.svg);
-    background-size: 59px 47px;
-}
-
-.our-clients .list-item li:nth-child(6){
-    background-image: url(../images/logo\ 6.svg);
-    background-size: 89px 45px;
+.clients-icons{
+    fill: #AFB1B8;
 }
 
 /*Футер*/
